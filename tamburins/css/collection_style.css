@@ -1,0 +1,250 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color:inherit;}
+body{
+  font-family:"맑은 고딕";
+  color: #f1f1f1;
+  font-size: 14px;
+  min-width:1900px;
+  background-color: #161c1d;
+  transition: all 0.5s;
+}
+#header video, #video video{
+  width:100%;
+}
+
+/*header*/
+#header > .video{
+  position: relative; 
+  margin-top: 20px; 
+  z-index: 11;
+  width:100%;
+}
+video{display: block;}
+
+#header > .nav{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 115px;
+  background-color: #f9eac7;
+  z-index: 13;
+}
+#header > .nav > .logo{
+  position: absolute;
+  font-weight: bold;
+  font-family:"Adobe Caslon Pro";
+  font-size: 40px;
+  color: #fffc9a;
+  line-height: 100px;
+  left: 40px; top: 10px;
+  text-shadow:2px 5px 10px rgb(187, 124, 35);
+  z-index: 10;
+}
+#header > .nav > .gnb{margin-left: 700px;}
+#header > .nav > .gnb > li{
+  float: left;
+  margin-right: 35px;
+  font-size: 14px;;
+  color: #432f1c;
+  line-height: 40px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+#header > .nav > .gnb > li:hover{
+  color: rgb(63, 94, 66);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*scroll*/
+#scroll{
+  width: 100%;
+  height: 3000px;
+  margin-top: -6px;
+  position: relative;
+}
+#scroll > .text{
+  text-align: center;
+  position: absolute;
+  top:400px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+#scroll > .text > h2{
+  font-size: 32px;
+  color: #c5d97e;
+  line-height: 80px;
+  font-family: "Adobe Caslon Pro";
+}
+#scroll > .text > p{
+  font-size: 20px;
+  font-weight: "맑은 고딕";
+  line-height: 40px;
+}
+
+#scroll > .img{
+  z-index: 1;
+  position: absolute;
+  top:50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#scroll > .color{
+  width: 100%; height: 1000px;
+  position: absolute;
+  bottom: 0;
+}
+
+/*contents*/
+#contents{
+  width: 100%;
+  height: 1800px;
+  display: flex;
+  justify-content: center;
+}
+#allBox{
+  width: 1180px;
+  height: 1414px;
+  display: flex;
+  flex-wrap: wrap;
+  filter: drop-shadow(5px 5px 15px #1d2525);
+}
+#allBox > .box{
+  width: 590px;
+  height: 707px;
+  background-color: #fff;
+
+}
+#allBox > .box > .txt{text-align: center;}
+#allBox > .box p:nth-child(1){
+  font-size: 14px;
+  color: #432f1c;
+  margin-top: 100px;
+  line-height: 40px;
+}
+#allBox > .box p:last-child{
+  font-size: 12px;
+  color: #432f1c;
+  line-height: 30px;
+}
+#allBox > .box h2{
+  cursor: pointer;
+  width: 130px;
+  margin: auto;
+  box-shadow: inset 0 0 0 0 #405351;
+  font-size: 16px;
+  color: #432f1c;
+  font-weight: bold;
+  line-height: 30px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+#allBox > .box h2:hover{
+  color: #c5d97e;
+  box-shadow: inset 200px 0 0 0 #405351;
+}
+#allBox > .box > .img{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  transition: all 0.3s linear;
+}
+#allBox > .box > .img:hover{
+  transform: scale(1.2);
+}
+#allBox > .box > .shop{
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #432f1c;
+  text-align: center;
+}
+#allBox > .box > .shop:hover{
+  color: #7a0f0f;
+  font-size: 16px;
+}
+
+/*show*/
+#show{
+  width: 100%;
+  height: 1120px;
+  position: relative;
+}
+
+#show > .video{
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  color: #6c7e7e;
+  filter: drop-shadow(5px 5px 15px #414d4d);
+}
+
+/*txt*/
+#txt{
+  width: 100%;
+  height: 440px;
+}
+#txt > p{
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+}
+
+#video > video{display: block;}
+
+/*footer END*/
+#footer{
+  min-width: 1200px;
+  width: 100%;
+  height: 511px;
+  margin: auto;
+  margin-top: -1px;/*왜 여백이 생기지?*/
+}
+#footer > .yellowFooter{
+  width: 100%;
+  height: 320px;
+  background-color: #2e3e40;
+  display: flex;
+  justify-content: space-around;
+}
+#footer > .yellowFooter > .txt{
+  font-size: 12px;
+  font-family: "맑은 고딕";
+  text-align: center;
+  color: #f1f1f1;
+  margin-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#footer > .yellowFooter > .txt > li{
+  line-height: 35px;
+}
+#footer > .yellowFooter > .txt > li:hover{
+  text-decoration: underline;
+  color: #c5d97e;
+}
+#footer > .yellowFooter > .txt > .bold{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#footer > .box{
+  background-color: #8d9d9f;
+  width: 100%;
+  height: 191px;
+  position: relative;
+}
+#footer > .box > .txt{
+  text-align: center;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 12px;
+  font-family: "맑은 고딕";
+  line-height: 23px;  
+  color: #382c20;
+}
+
+
+
+
