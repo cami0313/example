@@ -1,124 +1,240 @@
-*{margin: 0; padding: 0;}
-ul{list-style: none;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 a{text-decoration: none; color: inherit;}
+ul{list-style: none;}
 body{
-  font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-family: "맑은 고딕";
+}
+#header .wrap{
+    position: fixed;
+    top: 40px; left: 50%;
+    transform: translateX(-50%);
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+#header .nav{
+    display: flex;
+}
+#header .nav li{
+    margin-left: 100px;
 }
 
-/*banner*/
 #banner{
-  min-width: 1300px;
-  height: 320px;
-  /*배경이미지와 그라디언트를 겹쳐서 사용할 수 있다.*/
-  background: linear-gradient(0deg, rgba(0,0,0,0.6)0%,
-  rgba(0,0,0,0.6)100%), url(../img/banner.jpg)center/cover;
-  text-align: center;
-  color: #fff;
-  padding-top: 80px;
-  box-sizing: border-box;
+    width: 1920px;
+    height: 980px;
+    background: url(../img/about.png);
 }
-#banner > h1{
-  font-size: 32px;
-  line-height: 80px;
+#banner p{
+    position: absolute;
+    top: 80%; left: 63%;
+    line-height: 30px;
+    font-weight: bold;
+    color: #2a3749;
 }
 
-/*numbers*/
-#numbers{
-  width: 1300px;
-  margin: auto;
-  background-color: #10c9c3;
-  color: #fff;
-  padding: 100px 0px;
-  display: flex;
+/*skill*/
+.skill{
+    width: 1920px; height: 1520px;
+    background: url(../img/skill.png);
+    clear: both; padding-left: 100px; padding-top: 180px;
+}
+.skill > .wrap .photo, .ill, .visual{
+  padding-bottom: 160px;
 }
 
-#numbers > .item{
-  width: 25%;/*?*/
-  height: 40px;
-  border-right:2px solid #fff ;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*poss*/
+.poss .wrap{
+    width: 1920px; height: 1520px;
+    background: #5f6d80;
 }
-#numbers > .item:last-child{
-  border-right: 0; /*마지막 요소의 선 없애기*/
+.poss .img{
+    text-align: center;
+    padding-top: 180px;
 }
-.item > img{
-  margin-right: 20px;
-  position: relative;
-  bottom: 1px;
+.poss .img img{
+    padding-bottom: 120px;
 }
 
-.item > p{
-  font-size: 12px;
-  line-height: 20px;
-  text-transform: uppercase;/*소문자를 대문자로 변경*/
+/*trand*/
+.trand .wrap{
+    width: 1920px; height: 800px;
+    background: url(../img/trand.png)
 }
-.item > p > b{font-size: 16px;}
+.trand .wrap img{
+    padding-left: 344px;
+    padding-top: 212px;
+}
+.trand .wrap p{
+    padding-left: 910px;
+    padding-top: 200px;
+    font-size: 24px;
+    line-height: 40px;
+}
 
-/*about_me*/
-#about_me{
-  width: 1300px;
-  margin: auto;
-  height: 520px;
-  background-color: #f5f5f5;
-  display: flex;
+/*footer*/
+.footer .wrap{
+    width: 1920px; height: 240px;
+    background: #bdc9d9;
+    position: relative;
 }
-#about_me > div{
-  width: 50%;
-  height: 520px;
-  padding: 120px;
-  box-sizing: border-box;
-}
-.largeImg{
-  background:url(../img/about_me.jpg)center/cover;
-}
-#about_me > .txt > h1{
-  font-size: 28px;
-  line-height: 40px;
-  color: #191919;
-}
-#about_me > .txt > p{
-  font-size: 16px;
-  line-height: 20px;
-  color: #787878;
-  margin: 20px 0px;/*인접해 있는 요소는 상쇄된다*/
-}
-#about_me > .txt > .sign{margin-top: 40px;}/*적용*/
 
-/*project*/
-#project{
-  width: 1300px;
-  margin: auto;
-  height: 360px;
-  padding: 80px 0px;
-  box-sizing: border-box;
-  text-align: center;
+/*frame*/
+button{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    background: transparent;
+    /* padding: 0; */
+    font-size: inherit;
+    font-family: inherit;
 }
-#project > h1{
-  font-size: 28px;
-  color: #191919;
-  line-height: 40px;
+
+/*process button*/
+.footer .pro{
+    width: 12rem;
+    height: auto;
+    position: absolute;
+    top: 50%; left: 30%;
 }
-#project > p{
-  font-size: 16px;
-  color: #787878;
-  margin: 20px 0px 40px;
+.footer .pro > .circle{
+    transition: all 0.45s 
+    cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem; height: 3rem;
+    background: #fdd9d9;
+    border-radius: 1.625rem;
 }
-#project > a{
-  display: inline-block;
-  width: 170px;
-  height: 50px;
-  border: 0; outline: 0;
-  background-color: #10c9c3;
-  color: #fff;
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  text-transform: uppercase;
+.footer .pro > .circle > .icon{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  .footer .pro > .circle > .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  .footer .pro > .circle > .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .footer .pro .bTxt{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    padding: 0.8rem 0;
+    margin: 0 0 0 1rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .footer .pro:hover .circle {
+    width: 100%;
+  }
+  .footer .pro:hover .circle .icon.arrow {
+    background: #fff;
+    -webkit-transform: translate(1rem, 0);
+            transform: translate(1rem, 0);
+  }
+  .footer .pro:hover .bTxt {
+    color: #fff;
+  }
+  
+
+
+/*porfolio button*/
+.footer .folio{
+    width: 12rem;
+    height: auto;
+    position: absolute;
+    top: 50%; left: 55%;
 }
-#project > a:hover{
-  background-color: #0ab6b1;
+.footer .folio > .circle{
+    transition: all 0.45s 
+    cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem; height: 3rem;
+    background: #fdd9d9;
+    border-radius: 1.625rem;
 }
+.footer .folio > .circle > .icon{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  .footer .folio > .circle > .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  .footer .folio > .circle > .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .footer .folio .bTxt{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    padding: 0.8rem 0;
+    margin: 0 0 0 1rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .footer .folio:hover .circle {
+    width: 100%;
+  }
+  .footer .folio:hover .circle .icon.arrow {
+    background: #fff;
+    -webkit-transform: translate(1rem, 0);
+            transform: translate(1rem, 0);
+  }
+  .footer .folio:hover .bTxt {
+    color: #fff;
+  }
+  
+

@@ -1,124 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>about</title>
-<!--외부정의 css-->
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/header.css" rel="stylesheet">
+
+<!--css외부정의-->
 <link href="css/about.css" rel="stylesheet">
-<link href="css/footer.css" rel="stylesheet">
-<!--파비콘--><!--파비콘사이츠 이용할때 png파일로 저장해서 해야됨-->
-<link rel="icon" type="image/ico" sizes="16*16" href="img/favicon.ico">
+<!--aos-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!--jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!--custom.js-->
+<script src="js/custom.js"></script>
+<script src="js/aos.js"></script>
+
 
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-      </div>
-      <ul class="navi">
-        <li><a href="index.html">Home</a></li>
-        <li class="on"><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+    <header id="header">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png"></a>
+                </div>
+                <ul class="nav">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="experience.html">EXPERINCE</a></li>
+                    <li><a href="port.html">PORTFOLIO</a></li>
+                    <li><a href="#">PROCESS</a></li>
+                </ul>
+            </div>
+    </header>
 
-  <section id="banner"><!--바깥쪽은 id로 주는게 좋음-->
-    <h1>UI/UX & Graphic Designer</h1>
-    <p>I am a Graphic &amp; Web Designer based in New York, specializing<br><!--오류가 날 수 있으니 &amp;-->
-      in User Interface Design and Development.</p>
-  </section>
-
-  <section id="numbers">
-    <div class="item">
-      <img src="img/bag.png" alt="">
-      <p>
-        <b>548</b><br>
-        Projects completed
-      </p>
-    </div>
-    <div class="item">
-      <img src="img/clock.png" alt="">
-      <p>
-        <b>1456</b><br>
-        working hours
-      </p>
-    </div>
-    <div class="item">
-      <img src="img/star.png" alt="">
-      <p>
-        <b>612</b><br>
-        positive feedback
-      </p>
-    </div>
-    <div class="item">
-      <img src="img/heart.png" alt="">
-      <p>
-        <b>735</b><br>
-        happy client
-      </p>
-    </div>
-  </section> 
-  
-  <section id="about_me">
-    <div class="largeImg"></div>
-    <div class="txt">
-      <h1>About me</h1>
-      <p>Given let waters air sea had you'll, may seed abundantly fish. 
-        Were, you'll earth forth winged above brought. Own darkness 
-        they're him can't fourth sea place have.</p>
-      <p>So the above May stars cattle fruitful face shall. Tree it, winged. 
-      Every signs male firmament us. Morning him.</p>
-      <img class="sign" src="img/sign.png" alt="">
-    </div>
-  </section>
-
-  <section id="project">
-    <h1>Need a Project?</h1>
-    <p>Let us know what you're looking for in an agency. We'll take a look and see<br>
-      if this could be the start of something beautiful.</p>
-    <a href="full_screen/index.html">let’s talk</a>
-  </section>
-
-  <footer>
-    <div class="wrap">
-      <ul class="author">
-        <li>Piroll Design, Inc.</li>
-        <li>&copy; 2022 Piroll. All rights reserved.<br>
-          Designed by robirurk.</li>
-      </ul>
-      <ul class="address">
-        <li>hello@pirolltheme.com</li>
-        <li>+44 987 065 908</li>
-      </ul>
-        <div class="menu">
-          <ul> 
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Carreer</a></li>
-          </ul>
-          <ul> 
-            <li><a href="#">News</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Legals</a></li>
-          </ul>
-          <ul> 
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Dribbble</a></li>
-          </ul>
+    <section id="banner">
+        <div class="wrap">
+            <p>주변에 긍정적인 에너지를 주며<br>
+                모두의 의견을 존중하며 <br>
+                소통하는 디자이너, 김승미 입니다. </p>
         </div>
-      
+    </section>
+
+    <div class="skill">
+     <div class="wrap">
+        <div class="photo aos-init aos-animate" data-aos="fade-right" data-aos-offset="0" data-aos-duration="2000" class="aos-init aos-animate">
+            <img src="img/photoshop.png" alt=""></div>
+        <div class="ill">
+            <img src="img/illustrator.png" alt="">
+        </div>
+        <div class="visual">
+            <img src="img/visual.png" alt="">
+        </div>
+     </div>
     </div>
-  </footer>
-  
-  
+
+    <div class="poss">
+        <div class="wrap">
+            <div class="img">
+                <img src="img/poss1.png">
+                <img src="img/poss2.png">
+                <img src="img/poss3.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="trand">
+      <div class="wrap">
+        <div class="txt">
+            <img src="img/trandTxt.png">
+            <p>ul/ux 과정을 수료하여 웹디자이너로 첫 발을 내딛고자 합니다.<br>
+                다양하고 독창적인 디자인을 도전하며 앞으로도 계속 발전하는<br>
+                유연한 디자이너가 되겠습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrap">
+            <div class="frame">
+                <div class="pro">
+                    <button class="folio">
+                        <span class="circle"><span class="icon arrow"></span>
+                        <a href="port.html"><span class="bTxt">PORTFOLIO</span></a>
+                    </button>
+                </div>
+               <div class="port">
+                   <button class="folio">
+                       <span class="circle"><span class="icon arrow"></span>
+                       <a href="experience.html"><span class="bTxt">EXPERINCE</span></a>
+                   </button>
+               </div>
+            </div>
+           </div>
+    </div>
 
 
 </body>

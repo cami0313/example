@@ -1,0 +1,135 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+ul{list-style: none;}
+body{
+    font-size: 16px;
+    font-family: "맑은 고딕";
+}
+#header .wrap{
+    position: fixed;
+    top: 40px; left: 50%;
+    transform: translateX(-50%);
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+#header .nav{
+    display: flex;
+}
+#header .nav li{
+    margin-left: 100px;
+}
+
+
+#banner{
+    width: 1920px;
+    height: 969px;
+    background: url(../img/background.png);
+}
+#banner .title{
+    position: absolute;
+    top: 45%; left: 16%;
+}
+
+/*frame*/
+button{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+/*process button*/
+#banner .pro{
+    background: #c1c1c1;
+    width: 178px; height: 47px;
+    border-radius: 10px;
+    position: absolute;
+    top: 80%; left: 16%;
+}
+#banner .pro:hover{
+    background-color: #bdc9d9;;
+}
+#banner .pro span{
+    margin-left: 30px;
+    line-height: 45px;
+}
+
+
+
+/*porfolio button*/
+#banner .folio{
+    width: 12rem;
+    height: auto;
+    position: absolute;
+    top: 80%; left: 30%;
+}
+#banner .folio > .circle{
+    transition: all 0.45s 
+    cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem; height: 3rem;
+    background: #bdc9d9;
+    border-radius: 1.625rem;
+}
+#banner .folio > .circle > .icon{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  #banner .folio > .circle > .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  #banner .folio > .circle > .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #banner .folio .bTxt{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    padding: 0.8rem 0;
+    margin: 0 0 0 1rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #banner .folio:hover .circle {
+    width: 100%;
+  }
+  #banner .folio:hover .circle .icon.arrow {
+    background: #fff;
+    -webkit-transform: translate(1rem, 0);
+            transform: translate(1rem, 0);
+  }
+  #banner .folio:hover .bTxt {
+    color: #fff;
+  }
+  
