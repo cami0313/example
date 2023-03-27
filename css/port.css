@@ -170,7 +170,7 @@ body{
 .section .slide-item .img-box{
     /* width: 50%; height: 100%; */
     position: absolute;
-    top: -20%; right: -30%;
+    top: -20%; right: -50%;
 }
 /*배경*/
 /*1*/
@@ -179,8 +179,9 @@ body{
     background-color: #ffefd5;
     border-radius: 10px;
     position: relative;
-    top: 50%; left: -13%;
-    transform: translateX(50%);
+    top: 50%; 
+    /* left: -13%; */
+    /* transform: translateX(50%); */
     width: 650px; height: 550px;   
 }
 /*2*/
@@ -189,8 +190,9 @@ body{
     background-color: #e1ffed;
     border-radius: 10px;
     position: relative;
-    top: 50%; left: -13%;
-    transform: translateX(50%);
+    top: 50%; 
+    /* left: -13%;
+    transform: translateX(50%); */
     width: 650px; height: 550px;   
 }
 /*3*/
@@ -199,33 +201,35 @@ body{
     background-color: #fff3f3;
     border-radius: 10px;
     position: relative;
-    top: 50%; left: -13%;
-    transform: translateX(50%);
+    top: 50%; 
+    /* left: -13%;
+    transform: translateX(50%); */
     width: 650px; height: 550px;   
 }
 
 /*컴퓨터*/
 .section .slide-item .img-box .pc{
     position: absolute;
-    top: -10%; left: 80%;
+    top: 5%; left: 45%;
     transform: translateX(-50%);
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 9;
 }
 .section .slide-item .img-box .pc .preview{
-    width: 900px; height: 800px; 
+    width: 600px; height: 500px; 
     position: relative;
     left: 5%;
     z-index: 4;
 }
+
 /*포폴리오 소개 이미지*/
 .section .slide-item .img-box .pc .preview img{width: 100%;}
 .section:nth-child(2) .slide-item .img-box .pc .hover-img{
     background: url(../img/tamburins.png) center top no-repeat;
     background-size: cover;
     position: absolute;
-    width: 533px; height: 300px;
-    left: 25.4%; top: 13.5%;
+    width: 573px; height: 320px;
+    left: 7.4%; top: 3%;
     /* transform: translateY(-50%); */
     z-index: 9;
     transition: 12s linear;
@@ -234,8 +238,8 @@ body{
     background: url(../img/Quafe.png) center top no-repeat;
     background-size: cover;
     position: absolute;
-    width: 533px; height: 300px;
-    left: 25.3%; top: 107px;
+    width: 573px; height: 320px;
+    left: 7.4%; top: 3%;
     /* transform: translateX(-50%); */
     z-index: 9;
     transition: 10s linear;
@@ -244,8 +248,8 @@ body{
     background: url(../img/cucucat.png) center top no-repeat;
     background-size: cover;
     position: absolute;
-    width: 533px; height: 300px;
-    left: 25.3%; top: 107px;
+    width: 573px; height: 320px;
+    left: 7.4%; top: 3%;
     /* transform: translateX(-50%); */
     z-index: 9;
     transition: 10s linear;
