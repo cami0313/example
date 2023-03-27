@@ -1,0 +1,450 @@
+@font-face {
+  font-family: 'RixInooAriDuriR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+ul{list-style: none;}
+body{
+  font-size: 14px;
+  font-family: "맑은 고딕";
+  color: #fff;
+}
+/*header*/
+header{
+  width: 100%; 
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+}
+nav{
+  width: 100%;
+  background-color: #20954c;
+  padding: 20px;
+  box-sizing: border-box;
+}
+nav > .wrap{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header > .wrap > .logo img{
+  width: 100%;
+} */
+#gnb{display: flex;}
+#gnb > li{
+  padding-right: 20px;
+}
+#gnb > li:hover{
+  color: #fbbb48;
+  text-decoration: underline;
+}
+.toggle{
+  position: absolute;
+  top: 35px; right: 0;
+  padding: 0 20px;
+  font-size: 30px;
+  color: #db403a;
+  display: none;/*메뉴아이콘을 오른쪽 상단에 배치 후 큰화면에서 제거*/
+}
+
+/*====================================*/
+/*banner*/
+#banner{width: 100%; background-color: #deffcf;}
+#banner > h1{
+  font-size: 48px;
+  font-weight: lighter;
+  color: #434caf;
+  font-family: "Rix이누아리두리";
+  position: absolute;
+  top: 25%; left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#banner > video{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+/*====================================*/
+/*contents*/
+#contents{width: 100%;}
+#contents > .wrap{
+  width: 100%;
+  height: 4850px;
+  background-color: #deffcf;
+}
+
+/*===================box==================*/
+#contents .box .onememo{
+  position: absolute;
+  top: 140%; left: 50%;
+  transform: translateX(-50%); 
+}
+/* #contents .box .onememo img{width: 100%;} */
+#contents .box .onech{
+  position: absolute;
+  top: 180%; left: 52%;
+  animation: move 4s infinite;
+}
+#contents .box .onech img{width: 100%;}
+
+@keyframes move{
+  0%{transform:translateX(40px);}
+  50%{transform:translateX(-40px);}
+  100%{transform:translateX(40px);}
+}
+#contents .box .brandNew{
+  position: absolute;
+  top: 160%; left: 70%;
+}
+#contents .box .brandNew img{width: 100%;}
+#contents .box .one{
+  position: absolute;
+  top: 170%; left: 15.5%;
+}
+#contents .box .oneimg{
+  position: absolute;
+  top: 175%; left: 40%;
+}
+#contents .box .oneimg img{width: 100%;}
+#contents .box .onetitle{
+  position: absolute; 
+  top: 160%; left: 44%;
+}
+#contents .box .onetitle img{width: 100%;}
+#contents .box .onesticker{
+  position: absolute;
+  top: 170%; left: 37%;
+}
+#contents .box .onesticker img{width: 100%;}
+
+/*txt*/
+#contents .box .txt > p{
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  top: 190%; left: 28%;
+  color: #523b3c;
+  text-align: center;
+}
+#contents .box .txt > p > span{ 
+  color: #eb6877;
+}
+#contents .box .txt > h2{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  color: #eb6877;
+  position: absolute;
+  top: 224%; left: 33%;
+}
+/*===================box2==================*/
+#contents .box2 .twomemo{
+  position: absolute;
+  top: 260%; left: 50%;
+  transform: translateX(-50%);
+}
+#contents .box2 .twoch img{width: 100%;}
+#contents .box2 .twoch{
+  position: absolute;
+  top: 302%; left: 52%;
+  animation: move 4s infinite;
+}
+#contents .box2 .twoch img{width: 100%;}
+#contents .box2 .twosticker img{width: 100%;}
+#contents .box2 .twosticker{
+  position: absolute;
+  top: 280%; left: 17%;
+}
+#contents .box2 .two{
+  position: absolute;
+  top: 290%; left: 72.5%;
+}
+#contents .box2 .twoimg{
+  position: absolute;
+  top: 295%; left: 40%;
+}
+#contents .box2 .twoimg img{width: 100%;}
+#contents .box2 .sns{
+  position: absolute;
+  top: 290%; left: 36%;
+}
+#contents .box2 .sns img{width: 100%;}
+#contents .box2 .twotitle{
+  position: absolute;
+  top: 280%; left: 45%;
+}
+#contents .box2 .twotitle img{width: 100%;}
+
+/*txt*/
+#contents .box2 .txt > p{
+  text-align: center;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color: #523b3c;
+  top: 312%; left: 27.5%;
+}
+#contents .box2 .txt span{color: #20954c;}
+#contents .box2 .txt > h2{
+  position: absolute;
+  top: 342%; left: 32%;
+  color: #20954c;
+  font-weight: bold;
+  font-size: 34px;
+  text-align: center;
+}
+/*===================box3==================*/
+#contents .box3 .threememo{
+  position: absolute;
+  top: 380%; left: 50%;
+  transform: translateX(-50%);
+}
+/* #contents .box3 .threememo img{width: 100%;} */
+#contents .box3 .onech{
+  position: absolute;
+  top: 422%; left: 52%;
+  animation: move 4s infinite;
+}
+#contents .box3 .onech img{width: 100%;}
+#contents .box3 .three{
+  position: absolute;
+  top: 415%; left: 8.5%;
+}
+#contents .box3 .threeimg{
+  position: absolute;
+  top: 415%; left: 40%;
+}
+#contents .box3 .threeimg img{width: 100%;}
+#contents .box3 .threesticker{
+  position: absolute;
+  top: 395%; left: 70%;
+}
+#contents .box3 .threesticker img{width: 100%;}
+#contents .box3 .good{
+  position: absolute;
+  top: 410%; left: 37%;
+}
+#contents .box3 .good img{width: 100%;}
+#contents .box3 .threetitle img{width: 100%;}
+#contents .box3 .threetitle{
+  position: absolute;
+  top: 400%; left: 44%;
+}
+/*txt*/
+#contents .box3 .txt > p{
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  top: 430%; left: 28%;
+  color: #523b3c;
+  text-align: center;
+}
+#contents .box3 span{color: #f89842;}
+#contents .box3 .txt > h2{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  color: #f89842;
+  position: absolute;
+  top: 462%; left: 32%;
+}
+
+/*====================================*/
+/*footer*/
+footer{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+footer > .wrap{
+  font-size: 12px;
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+footer > .wrap > .left{
+  padding-left: 350px;
+}
+
+/*====================================*/
+/*1200px*/
+@media (max-width:1200px){
+  #contents .box .onech{
+    position: absolute;
+    top: 180%; left: 75%;
+  }
+  #contents > .wrap{height: 4400px;}
+  /*box*/
+  #contents .box .brandNew{ left: 78%;}
+  #contents .box .one{display: none;}
+  #contents .box .oneimg{ top: 180%; left: 35%;}
+  #contents .box .onetitle{top: 163%; left: 42%;}
+  #contents .box .onesticker{top: 175%; left: 31%;}
+  #contents .box .txt > p{top: 200%; left: 11%;}
+  #contents .box .txt > h2{top: 235%; left: 25%;}
+  /*box2*/
+  #contents .box2 .twoch{left: -2%;}
+  #contents .box2 .sns{top: 295%; left: 29%;}
+  #contents .box2 .two{display: none;}
+  #contents .box2 .twoimg{ top: 300%; left: 35%;}
+  #contents .box2 .twotitle{top: 285%; left: 42%;}
+  #contents .box2 .twosticker{left:2%}
+  #contents .box2 .txt > p{top: 320%; left: 15%;}
+  #contents .box2 .txt > h2{top: 352%; left: 23%;}
+  /*box3*/
+  #contents .box3 .onech{ top: 430%; left: 78%;}
+  #contents .box3 .good{top: 415%; left: 30%;}
+  #contents .box3 .three{display: none;}
+  #contents .box3 .threeimg{ top: 420%; left: 35%;}
+  #contents .box3 .threetitle{top: 405%; left: 42%;}
+  #contents .box3 .threesticker{left:75%}
+  #contents .box3 .txt > p{top: 440%; left: 18%;}
+  #contents .box3 .txt > h2{top: 472%; left: 20%;}
+}
+
+/*====================================*/
+/*980px*/
+@media (max-width:980px){
+  #contents > .wrap{height: 3880px;}
+  /*box*/
+  #contents .box .onememo{top: 150%; left: 42%;}
+  #contents .box .onememo img{width: 130%;} 
+  #contents .box .brandNew{ width: 20%;}
+  #contents .box .one{display: none;}
+  #contents .box .oneimg{ width: 30%; top: 180%; left: 36%;}
+  #contents .box .onetitle{width: 18%; top: 165%; left: 42%;}
+  #contents .box .onesticker{width: 13%; top: 175%; left: 32%;}
+  #contents .box .txt > p{top: 195%; left: 15%; font-size: 22px;}
+  #contents .box .txt > h2{top: 220%; left: 25%; font-size: 28px;}
+  /*box2*/
+  #contents .box2 .twomemo{top: 250%; left: 42%;}
+  #contents .box2 .twomemo img{width: 130%;} 
+  #contents .box2 .twoch{width: 26%; top: 290%;}
+  #contents .box2 .sns{width: 13%; top: 275%; left: 29%;}
+  #contents .box2 .two{display: none;}
+  #contents .box2 .twoimg{ width: 30%; top: 280%; left: 35%;}
+  #contents .box2 .twotitle{ width: 18%; top: 265%; left: 42%;}
+  #contents .box2 .twosticker{ width: 18%; top: 265%; left:2%}
+  #contents .box2 .txt > p{top: 295%; left: 18%; font-size: 22px;}
+  #contents .box2 .txt > h2{top: 317%; left: 21%; font-size: 28px;}
+  /*box3*/
+  #contents .box3 .threememo{top: 350%; left: 42%;}
+  #contents .box3 .threememo img{width: 130%;} 
+  #contents .box3 .onech{width: 24%; top: 390%; left: 78%;}
+  #contents .box3 .good{width: 13%; top: 375%; left: 30%;}
+  #contents .box3 .three{display: none;}
+  #contents .box3 .threeimg{ width: 30%; top: 380%; left: 35%;}
+  #contents .box3 .threetitle{width: 18%; top: 365%; left: 42%;}
+  #contents .box3 .threesticker{width: 20%;  top: 365%;}
+  #contents .box3 .txt > p{top: 395%; left: 18%; font-size: 22px;}
+  #contents .box3 .txt > h2{top: 417%; left: 20%; font-size: 28px;}
+
+  footer{max-width: 980px;}
+  footer > .wrap > .left{padding-left: 100px;}  
+} 
+
+/*====================================*/
+/*768px*/
+@media (max-width:768px){
+  header > nav > .wrap{
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+  }
+  .wrap > .logo img{width: 138px;}
+  #gnb{ 
+    width: 100%;
+    padding: 0px 20px;
+    flex-direction: column;
+    display: none;
+   }
+   #gnb > li{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    padding-top: 10px;
+   }
+   #gnb > li:hover{
+    background-color: #19793e;
+   }
+   .toggle{
+    display: block;
+    top: 20px;
+  }
+  #contents > .wrap{height: 3350px;}
+
+  #contents .box .txt > h2{display: none;}
+  #contents .box2 .txt > h2{display: none;}
+  #contents .box3 .txt > h2{display: none;}
+  #contents .box .oneimg{ top: 178%; left: 40%;}
+  #contents .box .onetitle{left: 45%;}
+  /*box2*/
+  #contents .box2 .twomemo{top: 230%; left: 42%;}
+  #contents .box2 .twoch{top: 265%;}
+  #contents .box2 .sns{top: 255%; left: 29%;}
+  #contents .box2 .twoimg{top: 260%; left: 40%;}
+  #contents .box2 .twotitle{top: 245%; left: 42%;}
+  #contents .box2 .twosticker{top: 245%; left:2%}
+  #contents .box2 .txt > p{top: 270%;}
+  /*box3*/
+  #contents .box3 .threememo{top: 310%; left: 42%;}
+  #contents .box3 .onech{ top: 340%;}
+  #contents .box3 .good{ top: 335%; left: 30%;}
+  #contents .box3 .three{display: none;}
+  #contents .box3 .threeimg{ top: 338%; left: 40%;}
+  #contents .box3 .threetitle{ top: 325%; left: 46%;}
+  #contents .box3 .threesticker{ top: 320%;}
+  #contents .box3 .txt > p{top: 348%;}
+  
+  footer .left ,
+  footer .left + p{display: none;}
+  footer > .wrap > .text{text-align: center; margin: auto;}
+}
+
+/*====================================*/
+/*480px*/
+@media (max-width:480px){
+  #banner > h1{font-size: 30px;}
+  #banner > video{width: 450px; top: 40%;}
+
+  #contents > .wrap{height: 2130px;}
+
+  #contents .box .onememo{top: 100%;}
+  #contents .box .onech{ top: 120%;}
+  #contents .box .oneimg{ top: 118%; left: 35%;}
+  #contents .box .onetitle{left: 45%;}
+  #contents .box .brandNew{ top: 110%;}
+  #contents .box .onetitle{top: 110%; left: 42%;}
+  #contents .box .onesticker{top: 115%;}
+  #contents .box .txt > p{top: 123%; left: 15%; font-size: 14px;}
+  
+  /*box2*/
+  #contents .box2 .twomemo{top: 150%; left: 42%;}
+  #contents .box2 .twoch{top: 170%;}
+  #contents .box2 .sns{top: 165%; left: 29%;}
+  #contents .box2 .twoimg{top: 168%; left: 35%;}
+  #contents .box2 .twotitle{top: 160%; left: 42%;}
+  #contents .box2 .twosticker{top: 157%; left:2%}
+  #contents .box2 .txt > p{top: 175%; font-size: 14px;}
+  /*box3*/
+  #contents .box3 .threememo{top: 200%; left: 42%;}
+  #contents .box3 .onech{ top: 220%;}
+  #contents .box3 .good{ top: 215%; left: 30%;}
+  #contents .box3 .three{display: none;}
+  #contents .box3 .threeimg{ top: 218%; left: 35%;}
+  #contents .box3 .threetitle{ top: 210%; left: 43%;}
+  #contents .box3 .threesticker{ top: 208%;}
+  #contents .box3 .txt > p{top: 225%; font-size: 14px;}
+  
+
+}

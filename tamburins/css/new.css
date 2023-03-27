@@ -1,0 +1,60 @@
+body{min-width: 1920px;}
+#new{
+  min-width: 1600px;
+  width: 100%;
+  height: 1280px;
+  background-color: #f9eac7;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+/*#new > #banner{box-shadow: -4px 8.0px 8.0px rgba(187, 124, 35, 0.4);}*/
+#new > #banner{ filter: drop-shadow(5px 5px 10px  rgb(241, 202, 148));}
+#new > .allBox{
+  width: 735px;
+  height: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+  box-sizing: border-box;
+  filter: drop-shadow(5px 5px 10px  rgb(241, 202, 148));/*이미지 로고 그림자*/
+} 
+#new > .allBox > .newBox{
+  width:367px;
+  height: 540px;
+}
+#new > .allBox > .newBox > .img{
+  display: flex; 
+  justify-content: space-around;
+  margin-bottom: 35px;
+  margin-top:30px;
+  cursor: pointer;
+}
+#new > .allBox > .newBox > .txt{
+  text-align: center;
+}
+#new > .allBox > .newBox > .txt > p{
+  margin-top: 12px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.newBox:hover{
+  background-color: #f9eac7;
+}
+.newBox > .txt > h2:hover{
+  color: #df7a27;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+#new > .allBox >.newBox > .img{transition: all 0.3s;}
+#new > .allBox >.newBox > .img:hover img{transform: scale(1.1);}
+
+
+
+
+
+
+
