@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+ul{list-style: none;}
+body{
+    font-size: 16px;
+    font-family: "맑은 고딕";
+}
+#header .wrap{
+    position: fixed;
+    top: 40px; left: 50%;
+    transform: translateX(-50%);
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+#header .nav{
+    display: flex;
+}
+#header .nav li{
+    margin-left: 100px;
+}
+
+
+#banner{
+    width: 1920px;
+    height: 969px;
+    background-color: #f9f9eb;
+}
+#banner .title{
+    position: absolute;
+    top: 50%; left: 38%;
+}
+
